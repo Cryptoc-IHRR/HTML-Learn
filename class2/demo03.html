@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 没有访问的 */
+        a:link{
+            color:deeppink;
+        }
+
+        /* 访问之后的 */
+        a:visited{
+            color:brown;
+        }
+
+        /* 鼠标经过 */
+        a:hover{
+            color:cornflowerblue;
+        }
+
+        /* 激活状态 */
+        a:active{
+            color:#e67225;
+        }
+        
+        /* 这些设置也是有先后顺序的，按照上面这个顺序来写就行了 */
+
+        /* 属性选择器 */
+        [type]{
+            color:cornflowerblue;
+        }
+        input[type='password']{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">伪类选择器测试</a>
+    姓名：<input type="text" name="username" value="lili">
+    密码：<input type="password" name="username" value="lili">
+</body>
+</html>

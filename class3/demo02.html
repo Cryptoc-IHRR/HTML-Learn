@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1,#box2,#box3{
+            width:200px;
+            height:200px;
+            /* display:inline-block; */
+            float:left;
+        }
+        #box1{
+            background-color:antiquewhite
+        }
+        #box2{
+            background-color: aqua;
+        }
+        #box3{
+            background-color:brown;
+        }
+        #box4{
+            width:300px;
+            height:300px;
+            background-color:black;
+        }
+        #box{
+            /* height:400px; */
+            background-color: blue;
+            /* 超出部分隐藏 */
+            overflow: hidden;
+        }
+        #box:after{
+            display:block;
+            /* 这里一般设置空值 */
+            content:'';
+            /* 清除浮动 所有效果 */
+            clear:both;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    解决浮动造成的高度坍塌问题
+    子级元素浮动之后不会占用父级元素的空间，导致父级元素没有高度
+    1、添加一个子级元素，会增加无意义元素
+    2、直接给父元素设置高度，如果子元素比较多，会溢出父元素范围
+    3、设置超出部分隐藏，如果是导航栏有下拉选项也会被隐藏
+    4、添加一个伪元素，实际上是不存在的，但是可以当做元素使用
+    -->
+    <div id="box">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <!-- <p id="box4">4</p> -->
+    </div>
+    
+</body>
+</html>

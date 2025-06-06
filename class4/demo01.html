@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/demo01.css" charset="utf-8" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>起点中文网</h1>
+            <p class="read">
+                阅&emsp;文&emsp;集&emsp;团&emsp;旗&emsp;下&emsp;网&emsp;站
+            </p>
+            <p class="user">用户注册</p>
+        </div>
+        <div class="register">
+            <p id="num">1</p>
+            <p>填写注册信息</p>
+        </div>
+        <div class="info">
+            <form action="#" method="post">
+                <p>
+                    <label for="tel">手&nbsp;&nbsp;机&nbsp;&nbsp;号</label>
+                    <select name="" id="">
+                        <option value="+86">中国大陆 &emsp; +86</option>
+                        <option value="+852">中国香港 &emsp; +852</option>
+                        <option value="+853">中国澳门 &emsp; +853</option>
+                        <option value="+886">中国台湾 &emsp; +886</option>
+                        <option value="+60">马来西亚 &emsp; +60</option>
+                    </select>
+                    <input
+                        type="text"
+                        id="tel"
+                        name="tel"
+                        placeholder="输入手机号码"
+                    />
+                </p>
+                <p>
+                    <label for="code">短信验证</label>
+                    <input
+                        type="text"
+                        id="code"
+                        name="code"
+                        placeholder="输入验证码"
+                    />
+                    <input type="button" value="获取验证码" />
+                </p>
+                <p>
+                    <label for="password">密&emsp;&emsp;码</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="8-16位大小写字母、符号或数字"
+                    />
+                </p>
+                <p>
+                    <label for="enterpwd">确认密码</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="再次输入密码"
+                    />
+                </p>
+                <p>
+                    <input type="checkbox" id="agree" />
+                    <label for="agree">
+                        我已阅读并同意
+                        <a href="#">《用户服务协议》</a>
+                        和
+                        <a href="#">《隐私政策》</a>
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" value="立即注册" />
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

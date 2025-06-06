@@ -1,0 +1,50 @@
+.box {
+    width: 1800px;
+    height: 800px;
+    margin: 20px auto;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.box .img img {
+    width: 1800px;
+    height: 800px;
+}
+.box .btn li {
+    width: 100px;
+    height: 100px;
+    /* background-color:beige; */
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    font-size: 100px;
+    color: #817162;
+    text-align: center;
+    line-height: 100px;
+}
+.box .btn #lt {
+    left: 25px;
+}
+.box .btn #gt {
+    right: 25px;
+}
+.box .circle ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -10px;
+    bottom: 200px;
+}
+.box .circle li {
+    width: 30px;
+    height: 30px;
+    background-color: #817162;
+    border: 5px solid #817162;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.box .circle li:hover {
+    border: 5px solid #dbcc8d;
+    background-color: black;
+}

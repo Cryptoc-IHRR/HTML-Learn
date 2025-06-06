@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            /* background-color:antiquewhite;
+            border-color:blueviolet;
+            border-width: 2px;
+            border-style: solid;
+            border: deeppink 8px dashed;
+            border-left: #e6e6e6 6px dotted;
+            border-top: yellow 6px double; */
+            border: black 5px solid;
+            /* border-radius: 50%; */
+
+            /* 内边距不能设置负值
+            内边距会撑大盒子的大小 */
+            padding-left: 50px;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+
+            /* 参数个数不同代表的方向也会不同 */
+            /* 四个参数 上 右 下 左 顺时针 */
+            /* 三个参数 上 左右 下 */
+            /* 两个参数 上下 左右 */
+            /* 一个参数 上下左右 */
+            padding: 50px 80px 100px 30px;
+        }
+        div{
+            /* 行块元素：可以设置宽高，会排列在同一行 */
+            display:inline-block;
+        }
+        .box1{
+            width:200px;
+            height:200px;
+            border:#e67809 8px solid;
+            padding-left:5px;
+            padding-top:5px;
+
+            /* 
+            外边距特点：
+            1、上下外边距取两者之间的最大值 
+            2、左右外边距取两者之和
+            3、不会改变盒子的大小
+            4、外边距可以设置负值
+            */
+            /* margin-bottom:50px; */
+            margin-right:50px;
+        }
+        .box2{
+            width:50px;
+            height:50px;
+            border: red 2px solid;
+            /* margin-top:100px; */
+            margin-left:-100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class='box1'></div>
+        <!-- 如果给子元素添加外边距失效，外边距效果显示在父级元素上面，给父级元素添加一个颜色一致的边框 -->
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

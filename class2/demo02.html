@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* id 选择器 */
+        #p1{
+            color:red;
+        }
+
+        /* class 选择器 */
+        .p_calss{
+            color:green;
+        }
+
+        /* 标签选择器 */
+        p{
+            color:blue;
+        }
+
+        /* 通配符选择器 */
+        *{
+            color:yellow;
+        }
+
+        /* 
+        id > class > 标签 > 通配符
+        */
+
+        /* 群组选择器，不同的选择器之间逗号隔开 */
+        #p1,span{
+            color:darkblue;
+        }
+
+        /* 后代选择器，中间用空格隔开 */
+        /* div 标签里面的 span 标签都会渲染样式 */
+        div span{
+            color:blue;
+        }
+
+        /* 子代选择器，中间用大于号隔开 */
+        /* div 里面的第一层 span 标签会渲染样式 */
+        div>span{
+            color:red;
+        }
+
+        /* 兄弟选择器，中间用 ~ 隔开 */
+        /* 
+        1、找到 id 值为 p1 的标签
+        2、找到 p1 标签后面的 p 标签
+         */
+        #p1~p{
+            color:red;
+        }
+        
+        /* 相邻兄弟选择器 中间用 + 号隔开 */
+        /* 
+        1、找到 id 值为 p1 的标签
+        2、找到 p1 标签后面最近的 p 标签 */
+        #p1+p{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1" class="p_class">第一个</p>
+        <p id="p2" class="p_calss">第二个</p>
+        <p class="p_calss">第三个<span>span是子级元素</span></p>
+        <div><p>第四个</p></div>
+        <span>第五个</span>
+    </div>
+</body>
+</html>

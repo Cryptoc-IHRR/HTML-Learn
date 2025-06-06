@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* 字体类型 */
+            font-family: kaiti;
+
+            /* 字体大小 */
+            font-size: 30px;
+            font-style:italic;
+            font-weight:bold;
+
+            /* 大写字母 字体变小 */
+            font-variant: small-caps;
+
+            /* 复合样式 */
+            /* 
+            顺序 样式-小大写-粗细-大小-类型
+            大小和类型的顺序不能修改
+            大小和类型是必备参数
+             */
+            font: italic small-caps bold 25px youyuan;
+
+            /* 文本常用样式 */
+            /* 文本对齐方式 */
+            /* 水平居中对齐 */
+            text-align: left;
+
+            /* 垂直居中对齐 */
+            height:80px;
+            line-height: 80px;
+
+            /* 每一段落的第一行会首行缩进 em 是一个中文字的单位 */
+            text-indent: 2em;
+
+            /* 文本线 */
+            text-decoration: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: red;
+
+            /* 词间距 用空格来判定一个单词*/
+            word-spacing: 2em;
+
+            /* 字间距 */
+            letter-spacing: 1em;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1" class="p_class">第一个</p>
+        <p id="p2" class="p_calss">第二个</p>
+        <p class="p_calss">第三个<span>span是子级元素</span></p>
+        <div><p>第四个</p></div>
+        <span>第五个</span>
+        <p>jack &emsp; &emsp; of &lt;all&gt; trades and master of none.</p>
+        <p>&nbsp;&nbsp;whatever is worth doing is worth doing well.</p>
+        
+    </div>
+</body>
+</html>
